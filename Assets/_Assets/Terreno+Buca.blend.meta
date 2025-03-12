@@ -3,7 +3,27 @@ guid: 2b08aef042d440046acf5f3b7988bfde
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BucaIntegra
+    second: {fileID: 2100000, guid: ca8d17befd9da7942831a197714eb620, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BucaScavata
+    second: {fileID: 2100000, guid: 18374fdc627a58146be51330c7c691e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lago
+    second: {fileID: 2100000, guid: 865ce85cbae697145884426b431dc91e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terreno
+    second: {fileID: 2100000, guid: 2c331ddd77c1606418943368186fd13e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
