@@ -67,6 +67,7 @@ MonoBehaviour:
   - {fileID: 6844713512585139002}
   - {fileID: 7520972941362479893}
   - {fileID: 6234385497044848475}
+  - {fileID: 5971102237505100441}
 --- !u!114 &3394391186127701672
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -326,13 +327,13 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0}
   spaceEmissionTexture:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: d3e5016fe3df4bb4d9140cb516533197, type: 3}
+    m_Value: {fileID: 8900000, guid: 580d9d7c40dfc6244958e4a1ff095696, type: 3}
   spaceEmissionMultiplier:
     m_OverrideState: 1
-    m_Value: 17.5
+    m_Value: 7
   spaceRotation:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0, y: -167.19, z: 0}
   colorSaturation:
     m_OverrideState: 1
     m_Value: 1
@@ -462,6 +463,52 @@ MonoBehaviour:
   receiverMotionRejection:
     m_OverrideState: 0
     m_Value: 1
+--- !u!114 &5971102237505100441
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd486065ce11414fa40e631affc4900, type: 3}
+  m_Name: ProbeVolumesOptions
+  m_EditorClassIdentifier: 
+  active: 1
+  normalBias:
+    m_OverrideState: 0
+    m_Value: 0.05
+  viewBias:
+    m_OverrideState: 0
+    m_Value: 0.1
+  scaleBiasWithMinProbeDistance:
+    m_OverrideState: 0
+    m_Value: 0
+  samplingNoise:
+    m_OverrideState: 0
+    m_Value: 0.1
+  animateSamplingNoise:
+    m_OverrideState: 0
+    m_Value: 1
+  leakReductionMode:
+    m_OverrideState: 0
+    m_Value: 2
+  minValidDotProductValue:
+    m_OverrideState: 0
+    m_Value: 0.1
+  occlusionOnlyReflectionNormalization:
+    m_OverrideState: 0
+    m_Value: 1
+  intensityMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+  skyOcclusionIntensityMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+  worldOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
 --- !u!114 &6234385497044848475
 MonoBehaviour:
   m_ObjectHideFlags: 3

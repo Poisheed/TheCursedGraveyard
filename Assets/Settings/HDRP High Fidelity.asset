@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HDRP High Fidelity
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
-    supportShadowMask: 0
+    supportShadowMask: 1
     supportSSR: 0
     supportSSRTransparent: 0
     supportSSAO: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
     supportProbeVolumeGPUStreaming: 0
     supportProbeVolumeDiskStreaming: 0
     probeVolumeSHBands: 1
-    supportProbeVolumeScenarios: 0
+    supportProbeVolumeScenarios: 1
     supportProbeVolumeScenarioBlending: 1
     probeVolumeBlendingMemoryBudget: 128
     supportRayTracing: 0
@@ -121,33 +121,33 @@ MonoBehaviour:
       directionalShadowFilteringQuality: 2
       areaShadowFilteringQuality: 0
       punctualLightShadowAtlas:
-        shadowAtlasResolution: 4096
+        shadowAtlasResolution: 2048
         shadowAtlasDepthBits: 16
         useDynamicViewportRescale: 1
       areaLightShadowAtlas:
-        shadowAtlasResolution: 4096
+        shadowAtlasResolution: 2048
         shadowAtlasDepthBits: 16
         useDynamicViewportRescale: 0
-      cachedPunctualLightShadowAtlas: 4096
-      cachedAreaLightShadowAtlas: 4096
+      cachedPunctualLightShadowAtlas: 2048
+      cachedAreaLightShadowAtlas: 2048
       allowDirectionalMixedCachedShadows: 0
       shadowResolutionDirectional:
-        m_Values: 00020000000400000008000000100000
+        m_Values: 00020000000400000008000000080000
         m_SchemaId:
           m_Id: With4Levels
       shadowResolutionPunctual:
-        m_Values: 00020000000400000008000000100000
+        m_Values: 00020000000400000008000000080000
         m_SchemaId:
           m_Id: With4Levels
       shadowResolutionArea:
         m_Values: 00020000000400000008000000100000
         m_SchemaId:
           m_Id: With4Levels
-      maxDirectionalShadowMapResolution: 4096
+      maxDirectionalShadowMapResolution: 2048
       maxPunctualShadowMapResolution: 4096
-      maxAreaShadowMapResolution: 4096
-      supportScreenSpaceShadows: 0
-      maxScreenSpaceShadowSlots: 4
+      maxAreaShadowMapResolution: 2048
+      supportScreenSpaceShadows: 1
+      maxScreenSpaceShadowSlots: 10
       screenSpaceShadowBufferFormat: 48
     decalSettings:
       drawDistance: 1000
