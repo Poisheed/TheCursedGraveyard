@@ -1,30 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
+    public Item item = new Item("Item Name", 1);
 
-
-    string[] objectName = new string[] {};
-    public Text[] objectText = new Text[] { };
-    public int[] objectNumber = new int[] { 0, 0, 0 };
-    
-
-    
-
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        int n = 0;
-        //illumina tasto
-        //is tasto premuto
-        foreach (string a in objectName)
+        if (other.CompareTag("Player"))
         {
-            if (other.name == objectName[n])
-            {
-                objectNumber[n] += other.GetComponent<Amount>().amount;
-                objectText[n].text = objectNumber[n].ToString();
-            }
-            else n++;
+            Inventory.instance.AddItem(item);
+            Destroy(gameObject);
         }
     }
 }
