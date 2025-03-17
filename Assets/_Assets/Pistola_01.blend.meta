@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 45c8e6163da7f74449a4de35524bd66c
+guid: 4d68549e49cf5874facd5e57dc958272
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pistola_01
+    second: {fileID: 2100000, guid: d6336d1e13bcd4141b334d357003a39f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -46,7 +51,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

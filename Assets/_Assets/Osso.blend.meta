@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 45c8e6163da7f74449a4de35524bd66c
+guid: 4e734391e0042574a96b87541c32149d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Osso
+    second: {fileID: 2100000, guid: cc59aa2e93c95af4d8eb0239cfb94cbc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -46,7 +51,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
