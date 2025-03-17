@@ -23,7 +23,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponentInChildren<Animator>();
+        //animator = GetComponentInChildren<Animator>();
         StartCoroutine(ShuffleMovement());
     }
 
@@ -38,7 +38,7 @@ public class EnemyMovement : MonoBehaviour
         {
             if (!isShuffling)
             {
-                animator.SetTrigger("zombie_Idle");
+                //animator.SetTrigger("zombie_Idle");
             }
         }
     }
@@ -64,14 +64,14 @@ public class EnemyMovement : MonoBehaviour
         }
         else if (distance <= MaxDist)
         {
-            animator.SetTrigger("zombie_Run");
+            //animator.SetTrigger("zombie_Run");
             transform.position += transform.forward * MoveSpeed * Time.deltaTime;
         }
     }
 
     void Attack()
     {
-        animator.SetTrigger("zombie_Strike");
+        //animator.SetTrigger("zombie_Strike");
     }
 
     IEnumerator ShuffleMovement()
@@ -81,7 +81,7 @@ public class EnemyMovement : MonoBehaviour
             if (!CanSeePlayer())
             {
                 isShuffling = true;
-                animator.SetTrigger("zombie_Shuffle");
+                //animator.SetTrigger("zombie_Shuffle");
 
                 Vector3 randomDirection = new Vector3(
                     Random.Range(-shuffleRadius, shuffleRadius),
@@ -102,7 +102,7 @@ public class EnemyMovement : MonoBehaviour
                     yield return null;
                 }
 
-                animator.SetTrigger("zombie_Idle");
+                //animator.SetTrigger("zombie_Idle");
                 isShuffling = false;
             }
             yield return new WaitForSeconds(shuffleInterval);
