@@ -7,6 +7,8 @@ public class CancelloOpen : MonoBehaviour
     public Transform objectToRotate2;  // L'oggetto che ruoterà
     public Vector3 rotationAngles = new Vector3(0, 90, 0);  // Di quanti gradi ruotare
     public float rotationSpeed = 5f; // Velocità della rotazione
+    public GameObject Collider_cancello;
+    private Collider col;
 
     private bool shouldRotate = false;
     private Quaternion targetRotation1;
@@ -14,6 +16,11 @@ public class CancelloOpen : MonoBehaviour
 
     private void Start()
     {
+       if (Collider_cancello != null)
+        {
+            col = Collider_cancello.GetComponent<Collider>();
+        }
+
         /*if (objectToRotate == null)
         {
             objectToRotate = transform; // Se non assegnato, usa l'oggetto stesso
@@ -44,8 +51,10 @@ public class CancelloOpen : MonoBehaviour
             targetRotation1 = Quaternion.Euler(objectToRotate1.eulerAngles + rotationAngles);
             targetRotation2 = Quaternion.Euler(objectToRotate2.eulerAngles - rotationAngles);
             shouldRotate = true;
-            Debug.Log("a");
-
+            if (col != null)
+            {
+                col.enabled = false;
+            }
         }
     }
 }
