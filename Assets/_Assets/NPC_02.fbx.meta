@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 9c271e2aa984a9e41af445d1cbba1b2c
+guid: 76c319c6cbb8b58469dbfc1fee183e7a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NPC_02
+    second: {fileID: 2100000, guid: e411887b623b316439ff3b535bbb93ff, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
